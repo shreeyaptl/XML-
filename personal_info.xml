@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE personal_info SYSTEM "external.dtd">
+	<personal_info>
+		<roll_no></roll_no>
+		<name></name>
+		<address></address>
+		<mobile></mobile>
+		<DOB></DOB>
+		<age></age>
+		<qualification></qualification>
+		
+	</personal_info>
