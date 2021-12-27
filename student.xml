@@ -1,0 +1,46 @@
+<!DOCTYPE Band [
+<!ELEMENT Band ( History+ , Award* , Member , Instrument , Time )>
+<!ELEMENT History (#PCDATA)>
+<!ELEMENT Award (#PCDATA)>
+<!ELEMENT IIFA (#PCDATA)>
+<!ELEMENT Member (Name , Role , Joined ) >
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Role (#PCDATA)>
+<!ELEMENT Joined (#PCDATA)>
+<!ELEMENT Instrument (#PCDATA)>
+<!ELEMENT  Pins ( odd | even ) >
+<!ELEMENT odd (#PCDATA)>
+<!ELEMENT even (#PCDATA)>
+<!ELEMENT Number (#PCDATA)>
+<!ELEMENT   Time (Description | Descr )>
+<!ELEMENT  Description (#PCDATA)>
+<!ELEMENT Descr (#PCDATA)>
+
+<!ATTLIST Joined Date CDATA #REQUIRED>
+<!ATTLIST Instrument Pins CDATA #IMPLIED>
+<!ATTLIST Instrument Number CDATA #IMPLIED>
+
+<!ENTITY Award "IIFA" >
+]>
+
+<Band>
+	<History></History>
+	<History></History>
+	<Award>&Award;</Award>
+	<Member>
+		<Name></Name>
+		<Role></Role>
+		<Joined Date = "12-02-2021">
+	          </Joined>
+	</Member>
+	<Instrument>
+		
+	</Instrument>
+	<Time>
+		<Descr></Descr>
+	</Time>
+</Band>
+	
+	
+	
+
