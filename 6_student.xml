@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE student [
+		<!ELEMENT student (Name+,ID,plan+)>
+		<!ELEMENT Name (fname , lname)>
+		<!ELEMENT fname (#PCDATA)>
+		<!ELEMENT lname (#PCDATA)>
+		<!ELEMENT ID (#PCDATA)>
+		<!ELEMENT plan (courses+)>
+		<!ELEMENT courses (course+)>
+		<!ATTLIST courses year CDATA #IMPLIED>
+		<!ELEMENT course (name ,shortName ,record+)>
+		<!ELEMENT name (#PCDATA)>
+		<!ELEMENT shortName (#PCDATA)>
+		<!ELEMENT record (grade,date)>
+		<!ELEMENT grade (#PCDATA)>
+		<!ELEMENT date (#PCDATA)>
+			
+	<student>
+		<Name>
+			<fname></fname>
+			<lname></lname>
+		</Name>
+		<ID></ID>
+		<plan>
+			<courses>
+				<course>
+					<name></name>
+					<shortName></shortName>
+					<record>
+						<grade></grade>
+						<date></date>
+					</record>
+				</course>
+			</courses>
+		</plan>
+	</student>
